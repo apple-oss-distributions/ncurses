@@ -1,5 +1,5 @@
 /****************************************************************************
- * Copyright (c) 1998,1999,2000,2001 Free Software Foundation, Inc.         *
+ * Copyright (c) 2002 Free Software Foundation, Inc.                        *
  *                                                                          *
  * Permission is hereby granted, free of charge, to any person obtaining a  *
  * copy of this software and associated documentation files (the            *
@@ -27,57 +27,68 @@
  ****************************************************************************/
 
 /****************************************************************************
- *  Author: Zeyd M. Ben-Halim <zmbenhal@netcom.com> 1992,1995               *
- *     and: Eric S. Raymond <esr@snark.thyrsus.com>                         *
+ *  Author: Thomas E. Dickey 2002                                           *
  ****************************************************************************/
 
-/*
-**	lib_insstr.c
-**
-**	The routine winsnstr().
-**
-*/
-
 #include <curses.priv.h>
-#include <ctype.h>
+#include <term.h>
 
-MODULE_ID("$Id: lib_insstr.c,v 1.1.1.1 2001/11/29 20:40:56 jevans Exp $")
+MODULE_ID("$Id: lib_vid_attr.c,v 1.1 2002/05/11 20:55:26 tom Exp $")
+
+#define set_color(mode, pair) mode &= ~A_COLOR; mode |= COLOR_PAIR(pair)
 
 NCURSES_EXPORT(int)
-winsnstr(WINDOW *win, const char *s, int n)
+vid_puts(attr_t newmode, short pair, void *opts GCC_UNUSED, int (*outc) (int))
 {
-    int code = ERR;
-    NCURSES_SIZE_T oy;
-    NCURSES_SIZE_T ox;
-    const unsigned char *str = (const unsigned char *) s;
-    const unsigned char *cp;
+    T((T_CALLED("vid_puts(%s,%d)"), _traceattr(newmode), pair));
+    set_color(newmode, pair);
+    returnCode(vidputs(newmode, outc));
+}
 
-    T((T_CALLED("winsnstr(%p,%s,%d)"), win, _nc_visbuf(s), n));
+#undef vid_attr
+NCURSES_EXPORT(int)
+vid_attr(attr_t newmode, short pair, void *opts GCC_UNUSED)
+{
+    T((T_CALLED("vid_attr(%s,%d)"), _traceattr(newmode), pair));
+    set_color(newmode, pair);
+    returnCode(vidputs(newmode, _nc_outch));
+}
 
-    if (win && str) {
-	oy = win->_cury;
-	ox = win->_curx;
-	for (cp = str; *cp && (n <= 0 || (cp - str) < n); cp++) {
-	    if (*cp == '\n' || *cp == '\r' || *cp == '\t' || *cp == '\b') {
-		NCURSES_CH_T wch;
-		SetChar2(wch, *cp);
-		_nc_waddch_nosync(win, wch);
-	    } else if (is7bits(*cp) && iscntrl(*cp)) {
-		winsch(win, ' ' + (chtype) (*cp));
-		winsch(win, (chtype) '^');
-		win->_curx += 2;
-	    } else {
-		winsch(win, (chtype) (*cp));
-		win->_curx++;
-	    }
-	    if (win->_curx > win->_maxx)
-		win->_curx = win->_maxx;
-	}
+NCURSES_EXPORT(attr_t)
+term_attrs(void)
+{
+    attr_t attrs = WA_NORMAL;
 
-	win->_curx = ox;
-	win->_cury = oy;
-	_nc_synchook(win);
-	code = OK;
-    }
-    returnCode(code);
+    T((T_CALLED("term_attrs()")));
+    if (enter_alt_charset_mode)
+	attrs |= WA_ALTCHARSET;
+
+    if (enter_blink_mode)
+	attrs |= WA_BLINK;
+
+    if (enter_bold_mode)
+	attrs |= WA_BOLD;
+
+    if (enter_dim_mode)
+	attrs |= WA_DIM;
+
+    if (enter_reverse_mode)
+	attrs |= WA_REVERSE;
+
+    if (enter_standout_mode)
+	attrs |= WA_STANDOUT;
+
+    if (enter_protected_mode)
+	attrs |= WA_PROTECT;
+
+    if (enter_secure_mode)
+	attrs |= WA_INVIS;
+
+    if (enter_underline_mode)
+	attrs |= WA_UNDERLINE;
+
+    if (SP->_coloron)
+	attrs |= A_COLOR;
+
+    returnAttr(attrs);
 }
