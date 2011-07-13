@@ -127,7 +127,7 @@
  * of the header incompatible.
  */
 #undef	NCURSES_CH_T
-#define NCURSES_CH_T chtype
+#define NCURSES_CH_T cchar_t
 
 #if 0 && defined(_LP64)
 typedef unsigned chtype;
@@ -332,16 +332,16 @@ typedef	chtype	attr_t;		/* ...must be at least as wide as chtype */
 #include <libutf8.h>
 #endif
 
-#if 0
+#if 1
 #include <wchar.h>		/* ...to get mbstate_t, etc. */
 #endif
 
 #if 0
-typedef unsigned short wchar_t;
+typedef unsigned short wchar_t1;
 #endif
 
 #if 0
-typedef unsigned int wint_t;
+typedef unsigned int wint_t1;
 #endif
 
 #define CCHARW_MAX	5

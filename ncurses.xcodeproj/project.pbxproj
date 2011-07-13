@@ -737,20 +737,20 @@
 		4C29FA901020EB4E001D8279 /* tset */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tset; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C29FA991020EB52001D8279 /* toe */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = toe; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C29FAA91020EBED001D8279 /* tic */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tic; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C29FB271021124D001D8279 /* unctrl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = unctrl.c; path = base/unctrl.c; sourceTree = SOURCE_ROOT; };
-		4C29FB5010211A0B001D8279 /* codes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = codes.c; path = base/codes.c; sourceTree = SOURCE_ROOT; };
+		4C29FB271021124D001D8279 /* unctrl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = unctrl.c; path = ncurses/unctrl.c; sourceTree = SOURCE_ROOT; };
+		4C29FB5010211A0B001D8279 /* codes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = codes.c; path = ncurses/codes.c; sourceTree = SOURCE_ROOT; };
 		4C29FBBA10223559001D8279 /* make_hash */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = make_hash; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C29FBE710223A64001D8279 /* comp_captab.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = comp_captab.c; path = base/comp_captab.c; sourceTree = SOURCE_ROOT; };
-		4C29FBF4102247F1001D8279 /* fallback.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fallback.c; path = base/fallback.c; sourceTree = SOURCE_ROOT; };
+		4C29FBE710223A64001D8279 /* comp_captab.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = comp_captab.c; path = ncurses/comp_captab.c; sourceTree = SOURCE_ROOT; };
+		4C29FBF4102247F1001D8279 /* fallback.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fallback.c; path = ncurses/fallback.c; sourceTree = SOURCE_ROOT; };
 		4C29FC2F10225768001D8279 /* libncurses.5.4.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libncurses.5.4.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C609E3410163B4500971540 /* make_keys */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = make_keys; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C609E4E101652A300971540 /* names.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = names.c; sourceTree = "<group>"; };
-		4C9BE7AF104330A100182AEE /* expanded.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = expanded.c; path = base/expanded.c; sourceTree = SOURCE_ROOT; };
+		4C9BE7AF104330A100182AEE /* expanded.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = expanded.c; path = ncurses/expanded.c; sourceTree = SOURCE_ROOT; };
 		4CBF370A103B515B00A2ACDC /* libnative_ncurses.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libnative_ncurses.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CC76F6C102791C300C87ED0 /* ncurses.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ncurses.plist; sourceTree = "<group>"; };
 		4CC76F6D102791C300C87ED0 /* ncurses.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ncurses.txt; sourceTree = "<group>"; };
 		4CCA0C11102386830073B661 /* lib_keyname.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lib_keyname.c; path = ncurses/ncurses/lib_keyname.c; sourceTree = SOURCE_ROOT; };
-		4CD04EE4103DE113001C87D5 /* lib_gen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lib_gen.c; path = base/lib_gen.c; sourceTree = SOURCE_ROOT; };
+		4CD04EE4103DE113001C87D5 /* lib_gen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lib_gen.c; sourceTree = "<group>"; };
 		4CD05000103F1BEB001C87D5 /* libform.5.4.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libform.5.4.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD05104103F1BFD001C87D5 /* libmenu.5.4.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libmenu.5.4.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD05208103F1C12001C87D5 /* libpanel.5.4.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libpanel.5.4.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -953,7 +953,6 @@
 		4CF086B80FFC2BAA00CE4372 /* config.sub */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = config.sub; sourceTree = "<group>"; };
 		4CF086B90FFC2BAA00CE4372 /* configure */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = configure; sourceTree = "<group>"; };
 		4CF086BA0FFC2BAA00CE4372 /* configure.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = configure.in; sourceTree = "<group>"; };
-		4CF086BB0FFC2BAB00CE4372 /* configure.orig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = configure.orig; sourceTree = "<group>"; };
 		4CF086BC0FFC2BAB00CE4372 /* convert_configure.pl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = convert_configure.pl; sourceTree = "<group>"; };
 		4CF086BD0FFC2BAB00CE4372 /* dist.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dist.mk; sourceTree = "<group>"; };
 		4CF086BF0FFC2BAD00CE4372 /* hackguide.doc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hackguide.doc; sourceTree = "<group>"; };
@@ -1785,20 +1784,6 @@
 		4CF08A0D0FFC2BB300CE4372 /* xterm-16color.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "xterm-16color.dat"; sourceTree = "<group>"; };
 		4CF08A0E0FFC2BB300CE4372 /* xterm-88color.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "xterm-88color.dat"; sourceTree = "<group>"; };
 		4CF08A0F0FFC2BB300CE4372 /* TO-DO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "TO-DO"; sourceTree = "<group>"; };
-		4CF08BEA0FFC2CCD00CE4372 /* curses.head */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = curses.head; sourceTree = "<group>"; };
-		4CF08BEB0FFC2CCD00CE4372 /* eti.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eti.h; sourceTree = "<group>"; };
-		4CF08BEC0FFC2CCD00CE4372 /* form.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = form.h; sourceTree = "<group>"; };
-		4CF08BED0FFC2CCD00CE4372 /* hashsize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hashsize.h; sourceTree = "<group>"; };
-		4CF08BEF0FFC2CCD00CE4372 /* menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = menu.h; sourceTree = "<group>"; };
-		4CF08BF00FFC2CCD00CE4372 /* mf_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mf_common.h; sourceTree = "<group>"; };
-		4CF08BF10FFC2CCD00CE4372 /* MKterm.h.awk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MKterm.h.awk; sourceTree = "<group>"; };
-		4CF08BF20FFC2CCD00CE4372 /* ncurses_cfg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ncurses_cfg.h; sourceTree = "<group>"; };
-		4CF08BF30FFC2CCD00CE4372 /* ncurses_def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ncurses_def.h; sourceTree = "<group>"; };
-		4CF08BF40FFC2CCD00CE4372 /* panel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = panel.h; sourceTree = "<group>"; };
-		4CF08BF50FFC2CCD00CE4372 /* parametrized.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parametrized.h; sourceTree = "<group>"; };
-		4CF08BF60FFC2CCD00CE4372 /* term.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = term.h; sourceTree = "<group>"; };
-		4CF08BF70FFC2CCD00CE4372 /* termcap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = termcap.h; sourceTree = "<group>"; };
-		4CF08BF80FFC2CCD00CE4372 /* unctrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unctrl.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1917,7 +1902,6 @@
 			children = (
 				4C006654103F5939008F286F /* libncurses.dylib */,
 				4CC76F6B1027919500C87ED0 /* open_source */,
-				4CF08BE10FFC2C4700CE4372 /* configured */,
 				4CF084630FFC0EF700CE4372 /* package */,
 				C6A0FF2B0290797F04C91782 /* Documentation */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
@@ -1977,7 +1961,6 @@
 				4CF086B80FFC2BAA00CE4372 /* config.sub */,
 				4CF086B90FFC2BAA00CE4372 /* configure */,
 				4CF086BA0FFC2BAA00CE4372 /* configure.in */,
-				4CF086BB0FFC2BAB00CE4372 /* configure.orig */,
 				4CF086BC0FFC2BAB00CE4372 /* convert_configure.pl */,
 				4CF086BD0FFC2BAB00CE4372 /* dist.mk */,
 				4CF086BE0FFC2BAB00CE4372 /* doc */,
@@ -3216,35 +3199,6 @@
 			path = test;
 			sourceTree = "<group>";
 		};
-		4CF08BE10FFC2C4700CE4372 /* configured */ = {
-			isa = PBXGroup;
-			children = (
-				4CF08BE80FFC2CCD00CE4372 /* include */,
-			);
-			name = configured;
-			sourceTree = "<group>";
-		};
-		4CF08BE80FFC2CCD00CE4372 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				4CF08BEA0FFC2CCD00CE4372 /* curses.head */,
-				4CF08BEB0FFC2CCD00CE4372 /* eti.h */,
-				4CF08BEC0FFC2CCD00CE4372 /* form.h */,
-				4CF08BED0FFC2CCD00CE4372 /* hashsize.h */,
-				4CF08BEF0FFC2CCD00CE4372 /* menu.h */,
-				4CF08BF00FFC2CCD00CE4372 /* mf_common.h */,
-				4CF08BF10FFC2CCD00CE4372 /* MKterm.h.awk */,
-				4CF08BF20FFC2CCD00CE4372 /* ncurses_cfg.h */,
-				4CF08BF30FFC2CCD00CE4372 /* ncurses_def.h */,
-				4CF08BF40FFC2CCD00CE4372 /* panel.h */,
-				4CF08BF50FFC2CCD00CE4372 /* parametrized.h */,
-				4CF08BF60FFC2CCD00CE4372 /* term.h */,
-				4CF08BF70FFC2CCD00CE4372 /* termcap.h */,
-				4CF08BF80FFC2CCD00CE4372 /* unctrl.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
 		C6A0FF2B0290797F04C91782 /* Documentation */ = {
 			isa = PBXGroup;
 			children = (
@@ -3559,7 +3513,14 @@
 			isa = PBXProject;
 			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "ncurses" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 08FB7794FE84155DC02AAC07 /* ncurses */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -3627,7 +3588,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "sh -e \"$SRCROOT/ncurses/ncurses/base/MKlib_gen.sh\" \"$THIS_CC -E -DHAVE_CONFIG_H -I. -I./ncurses/ncurses/ncurses -I./ncurses/include -U_XOPEN_SOURCE -D_XOPEN_SOURCE=500 -DSIGWINCH=28 -D_XOPEN_SOURCE_EXTENDED -DNDEBUG\" awk implemented <./ncurses/include/curses.h >\"$SRCROOT/base/link_test.c\"";
+			shellScript = "sh -e \"$SRCROOT/ncurses/ncurses/base/MKlib_gen.sh\" \"$THIS_CC -E -DHAVE_CONFIG_H -I. -I./ncurses/ncurses/ncurses -I./ncurses/include -U_XOPEN_SOURCE -D_XOPEN_SOURCE=500 -DSIGWINCH=28 -D_XOPEN_SOURCE_EXTENDED -DNDEBUG\" awk implemented <./ncurses/include/curses.h >\"$SRCROOT/ncurses/link_test.c\"";
 			showEnvVarsInLog = 0;
 		};
 		4C29F928101F8DD5001D8279 /* make unctrl.c */ = {
@@ -3642,7 +3603,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo | awk -f \"$SRCROOT/ncurses/ncurses/base/MKunctrl.awk\" bigstrings=1 >\"$SRCROOT/base/unctrl.c\"\n";
+			shellScript = "echo | awk -f \"$SRCROOT/ncurses/ncurses/base/MKunctrl.awk\" bigstrings=1 >\"$SRCROOT/ncurses/unctrl.c\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4C29F935101F8EBE001D8279 /* make init_keytry.h */ = {
@@ -3657,7 +3618,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$TARGET_BUILD_DIR/make_keys\" \"$SRCROOT/ncurses/keys.list\" >\"$SRCROOT/include/init_keytry.h\"\n";
+			shellScript = "\"$TARGET_BUILD_DIR/make_keys\" \"$SRCROOT/ncurses/keys.list\" >\"$SRCROOT/ncurses/init_keytry.h\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4C29FAE81020F7D5001D8279 /* make termsort */ = {
@@ -3702,7 +3663,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "awk -f \"$SRCROOT/ncurses/ncurses/tinfo/MKcodes.awk\" bigstrings=1 \"$SRCROOT/ncurses/include/Caps\" >\"$SRCROOT/base/codes.c\"";
+			shellScript = "awk -f \"$SRCROOT/ncurses/ncurses/tinfo/MKcodes.awk\" bigstrings=1 \"$SRCROOT/ncurses/include/Caps\" >\"$SRCROOT/ncurses/codes.c\"";
 			showEnvVarsInLog = 0;
 		};
 		4C29FBA3102230E4001D8279 /* make captab */ = {
@@ -3717,7 +3678,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "sh -e \"$SRCROOT/ncurses/ncurses/tinfo/MKcaptab.sh\" awk 1 \"$SRCROOT/ncurses/ncurses/tinfo/MKcaptab.awk\" \"$SRCROOT/ncurses/include/Caps\" >\"$SRCROOT/base/comp_captab.c\"";
+			shellScript = "sh -e \"$SRCROOT/ncurses/ncurses/tinfo/MKcaptab.sh\" awk 1 \"$SRCROOT/ncurses/ncurses/tinfo/MKcaptab.awk\" \"$SRCROOT/ncurses/include/Caps\" >\"$SRCROOT/ncurses/comp_captab.c\"";
 			showEnvVarsInLog = 0;
 		};
 		4C29FBB610223559001D8279 /* make captab */ = {
@@ -3732,7 +3693,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "sh -e $SRCROOT/ncurses/ncurses/tinfo/MKcaptab.sh awk 1 $SRCROOT/ncurses/ncurses/tinfo/MKcaptab.awk $SRCROOT/ncurses/include/Caps > $SRCROOT/base/comp_captab.c";
+			shellScript = "sh -e $SRCROOT/ncurses/ncurses/tinfo/MKcaptab.sh awk 1 $SRCROOT/ncurses/ncurses/tinfo/MKcaptab.awk $SRCROOT/ncurses/include/Caps > $SRCROOT/ncurses/comp_captab.c";
 		};
 		4C29FBF010224701001D8279 /* make fallback */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3746,7 +3707,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "sh -e \"$SRCROOT/ncurses/ncurses/tinfo/MKfallback.sh\" /usr/share/terminfo \"$SRCROOT/ncurses/misc/terminfo.src\"  >\"$SRCROOT/base/fallback.c\"";
+			shellScript = "sh -e \"$SRCROOT/ncurses/ncurses/tinfo/MKfallback.sh\" /usr/share/terminfo \"$SRCROOT/ncurses/misc/terminfo.src\"  >\"$SRCROOT/ncurses/fallback.c\"";
 			showEnvVarsInLog = 0;
 		};
 		4C5C3FD6102CD13500B4B066 /* ShellScript */ = {
@@ -3760,7 +3721,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# We want to build these for the builder's arch and SDK, not for the target system's as we use them during the build process (and not ever on the target system)\n\nset -e\n\nexport -n ARCHS SDKROOT CURRENT_ARCH RC_ARCHS RC_CFLAGS   EFFECTIVE_PLATFORM_NAME EMBEDDED_PROFILE_NAME RC_TARGET_CONFIG RC_TARGET_UPDATE SDK_DIR SDK_NAME `env | grep -E \"^PLATFORM_\" | cut -d= -f1` \n\n# export MACOSX_DEPLOYMENT_TARGET=`sw_vers -productVersion`\n# NBSDK=`xcodebuild -showsdks | awk '/macosx10\\./ { if (match($0, \"-sdk +macosx10\\.[0-9][^ ]*\")) print substr($0, RSTART, RLENGTH); }' | sort | tail -1`\n\n# Select the builder's default sdk\nexport SDKROOT=''\n\n# native_make_keys depends on native_make_hash...  so we get them both for the price of one\nxcodebuild -target native_make_keys MACOSX_DEPLOYMENT_TARGET=\"$MACOSX_DEPLOYMENT_TARGET\" MACOSX_DEPLOYMENT_TARGET=\"$MACOSX_DEPLOYMENT_TARGET\" SYMROOT=\"$SYMROOT\" DSTROOT=\"$DSTROOT\"\n";
+			shellScript = "\"$PROJECT_DIR\"/xcodescripts/native_execs.sh";
 		};
 		4C609E48101651E100971540 /* make names.c */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3791,7 +3752,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
-			shellScript = "mkdir -p \"$DSTROOT\"/usr/share/man/man{1,3,5,7} \"$DSTROOT\"/usr/share/tabset \"$DSTROOT\"/usr/local/OpenSource{Licenses,Versions} || true\ninstall -g \"$INSTALL_GROUP\" -o \"$INSTALL_OWNER\" -m \"$ALTERNATE_MODE\" ncurses5.4-config.1.gz \"$DSTROOT\"/usr/share/man/man1\ninstall -g \"$INSTALL_GROUP\" -o \"$INSTALL_OWNER\" -m \"$ALTERNATE_MODE\" ncurses.txt \"$DSTROOT\"/usr/local/OpenSourceLicenses\ninstall -g \"$INSTALL_GROUP\" -o \"$INSTALL_OWNER\" -m \"$ALTERNATE_MODE\" ncurses.plist \"$DSTROOT\"/usr/local/OpenSourceVersions\ninstall -g \"$INSTALL_GROUP\" -o \"$INSTALL_OWNER\" -m \"$INSTALL_MODE_FLAG\" ncurses/misc/tabset/* \"$DSTROOT\"/usr/share/tabset\ncd ncurses/man\nsh MKterminfo.sh terminfo.head ../include/Caps terminfo.tail >terminfo.5\nfor m in *.[1357]? *.[1357]; do\n\t# x=${m:e}\n\tx=$(echo $m | sed -E 's,^.*\\.([^.]*),\\1,')\n\t# section=$x[1,1]\n\tsection=$(echo $x | cut -c1-1)\n\tdst=\"$DSTROOT\"/usr/share/man/man$section/$m.gz\n\techo $dst\n\tsed -f fix_man.sed <\"$m\" | gzip -9 >\"$dst\"\n\tfor l in $(sed -f fix_man.sed <\"$m\" | sed -f manlinks.sed | sort -u); do\n\t\techo \\ \\ -\\> $l\n\t\tldst=\"$DSTROOT/usr/share/man/man$section/$l.$x.gz\"\n\t\t[[ ! -a \"$ldst\" ]] && ln \"$dst\" \"$ldst\"\n\tdone\ndone\n\nln \"$DSTROOT/usr/share/man/man3/curs_termcap.3x.gz\" \"$DSTROOT/usr/share/man/man3/termcap.3.gz\"\nexit 0";
+			shellScript = "\"$PROJECT_DIR\"/xcodescripts/install_man_misc.sh";
 		};
 		4CC76F7B102792A700C87ED0 /* bin fixup */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3805,7 +3766,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
-			shellScript = "ln -s tset \"$DSTROOT/usr/bin/reset\"\nln -s tic \"$DSTROOT/usr/bin/captoinfo\"\nln -s tic \"$DSTROOT/usr/bin/infotocap\"\ninstall -g \"$INSTALL_GROUP\" -o \"$INSTALL_OWNER\" -m \"$INSTALL_MODE_FLAG\" \"$SRCROOT/ncurses/misc/ncurses-config\" \"$DSTROOT/usr/bin/ncurses5.4-config\"\nchmod +x \"$DSTROOT/usr/bin/ncurses5.4-config\"\n";
+			shellScript = "\"$PROJECT_DIR\"/xcodescripts/fix_bin.sh";
 			showEnvVarsInLog = 0;
 		};
 		4CC76FBF1027A79600C87ED0 /* run_tic.sh */ = {
@@ -3820,7 +3781,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
-			shellScript = "cd ncurses/misc\nDESTDIR=\"$DSTROOT\" prefix=/usr exec_prefix=/usr bindir=/usr/bin top_srcdir=\"$SRCROOT/ncurses\" srcdir=\"$SRCROOT/ncurses/misc\" datadir=/usr/share /bin/sh ./run_tic.sh";
+			shellScript = "\"$PROJECT_DIR\"/xcodescripts/run_tic.sh";
 			showEnvVarsInLog = 0;
 		};
 		4CC76FD11027B24900C87ED0 /* headers */ = {
@@ -3835,7 +3796,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
-			shellScript = "mkdir -p \"$DSTROOT/usr/include\"\ninstall -g \"$INSTALL_GROUP\" -o \"$INSTALL_OWNER\" -m \"$INSTALL_MODE_FLAG\"  ./ncurses/include/tic.h ./ncurses/menu/eti.h ./ncurses/panel/panel.h ./ncurses/include/ncurses_dll.h ./ncurses/include/unctrl.h ./ncurses/include/nc_tparm.h ./include/term.h ./ncurses/form/form.h ./ncurses/include/termcap.h ./ncurses/include/curses.h ./ncurses/menu/menu.h ./ncurses/include/term_entry.h \"$DSTROOT/usr/include\"\nln -s curses.h \"$DSTROOT/usr/include/ncurses.h\"\n";
+			shellScript = "\"$PROJECT_DIR\"/xcodescripts/install_headers.sh";
 			showEnvVarsInLog = 0;
 		};
 		4CC76FDD1027BDCB00C87ED0 /* lib links */ = {
@@ -3849,8 +3810,8 @@
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
-			shellPath = /bin/zsh;
-			shellScript = "foreach link (libform.dylib libmenu.dylib libncurses.dylib libpanel.dylib) do\n\tln -s $(basename -s .dylib $link).5.4.dylib \"$DSTROOT/usr/lib/$link\"\ndone\n\nforeach link (libcurses.dylib libtermcap.dylib) do\n\tln -s libncurses.5.4.dylib $DSTROOT/usr/lib/$link\ndone\n\n# libncurses.5.dylib -- install the tiger version if i386 or ppc is a target arch\nif echo $ARCHS | grep -qE \"ppc|i386\"; then\n\tbzcat libncurses.5.dylib.tar.bz2 | (cd $DSTROOT; tar xf -)\nfi\n";
+			shellPath = /bin/sh;
+			shellScript = "\"$PROJECT_DIR\"/xcodescripts/link_libs.sh";
 		};
 		4CD04ED9103DDF02001C87D5 /* make lib_gen.c and expand.c */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3864,7 +3825,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nsh -e $SRCROOT/ncurses/ncurses/base/MKlib_gen.sh \"$THIS_CC -E -DHAVE_CONFIG_H -I../ncurses -I$SRCROOT/ncurses/ncurses -I$SRCROOT/ncurses/ncurses/include -I. -I../include  -U_XOPEN_SOURCE -D_XOPEN_SOURCE=500 -DSIGWINCH=28 -D_XOPEN_SOURCE_EXTENDED -DNDEBUG\" \"awk\" generated <$SRCROOT/ncurses/include/curses.h >$SRCROOT/base/lib_gen.c\n\nsh -e $SRCROOT/ncurses/ncurses/tty/MKexpanded.sh \"$THIS_CC -E\" -DHAVE_CONFIG_H -I../ncurses -I$SRCROOT/ncurses/ncurses -I$SRCROOT/ncurses/ncurses/include -I. -I../include  -U_XOPEN_SOURCE -D_XOPEN_SOURCE=500 -DSIGWINCH=28 -D_XOPEN_SOURCE_EXTENDED -DNDEBUG >$SRCROOT/base/expanded.c\n";
+			shellScript = "set -e\nsh -e $SRCROOT/ncurses/ncurses/base/MKlib_gen.sh \"$THIS_CC -E -DHAVE_CONFIG_H -I../ncurses -I$SRCROOT/ncurses/ncurses -I$SRCROOT/ncurses/ncurses/include -I. -I../include  -U_XOPEN_SOURCE -D_XOPEN_SOURCE=500 -DSIGWINCH=28 -D_XOPEN_SOURCE_EXTENDED -DNDEBUG\" \"awk\" generated <$SRCROOT/ncurses/include/curses.h >$SRCROOT/ncurses/lib_gen.c\n\nsh -e $SRCROOT/ncurses/ncurses/tty/MKexpanded.sh \"$THIS_CC -E\" -DHAVE_CONFIG_H -I../ncurses -I$SRCROOT/ncurses/ncurses -I$SRCROOT/ncurses/ncurses/include -I. -I../include  -U_XOPEN_SOURCE -D_XOPEN_SOURCE=500 -DSIGWINCH=28 -D_XOPEN_SOURCE_EXTENDED -DNDEBUG >$SRCROOT/ncurses/expanded.c\n";
 			showEnvVarsInLog = 0;
 		};
 		4CD04EF6103E17FF001C87D5 /* make lib_gen.c and expand.c */ = {
@@ -3879,7 +3840,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nsh -e $SRCROOT/ncurses/ncurses/base/MKlib_gen.sh \"$THIS_CC -E -DHAVE_CONFIG_H -I../ncurses -I$SRCROOT/ncurses/ncurses -I$SRCROOT/ncurses/ncurses/include -I. -I../include  -U_XOPEN_SOURCE -D_XOPEN_SOURCE=500 -DSIGWINCH=28 -D_XOPEN_SOURCE_EXTENDED -DNDEBUG\" \"awk\" generated <$SRCROOT/ncurses/include/curses.h >$SRCROOT/base/lib_gen.c\n\nsh -e $SRCROOT/ncurses/ncurses/tty/MKexpanded.sh \"$THIS_CC -E\" -DHAVE_CONFIG_H -I../ncurses -I$SRCROOT/ncurses/ncurses -I$SRCROOT/ncurses/ncurses/include -I. -I../include  -U_XOPEN_SOURCE -D_XOPEN_SOURCE=500 -DSIGWINCH=28 -D_XOPEN_SOURCE_EXTENDED -DNDEBUG >$SRCROOT/base/expanded.c\n";
+			shellScript = "set -e\nsh -e $SRCROOT/ncurses/ncurses/base/MKlib_gen.sh \"$THIS_CC -E -DHAVE_CONFIG_H -I../ncurses -I$SRCROOT/ncurses/ncurses -I$SRCROOT/ncurses/ncurses/include -I. -I../include  -U_XOPEN_SOURCE -D_XOPEN_SOURCE=500 -DSIGWINCH=28 -D_XOPEN_SOURCE_EXTENDED -DNDEBUG\" \"awk\" generated <$SRCROOT/ncurses/include/curses.h >$SRCROOT/ncurses/lib_gen.c\n\nsh -e $SRCROOT/ncurses/ncurses/tty/MKexpanded.sh \"$THIS_CC -E\" -DHAVE_CONFIG_H -I../ncurses -I$SRCROOT/ncurses/ncurses -I$SRCROOT/ncurses/ncurses/include -I. -I../include  -U_XOPEN_SOURCE -D_XOPEN_SOURCE=500 -DSIGWINCH=28 -D_XOPEN_SOURCE_EXTENDED -DNDEBUG >$SRCROOT/ncurses/expanded.c\n";
 			showEnvVarsInLog = 0;
 		};
 		4CD04F01103F1BEB001C87D5 /* make lib_gen.c */ = {
@@ -3894,7 +3855,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nsh -e $SRCROOT/ncurses/ncurses/base/MKlib_gen.sh \"$THIS_CC -E -DHAVE_CONFIG_H -I../ncurses -I$SRCROOT/ncurses/ncurses -I$SRCROOT/ncurses/ncurses/include -I. -I../include  -U_XOPEN_SOURCE -D_XOPEN_SOURCE=500 -DSIGWINCH=28 -D_XOPEN_SOURCE_EXTENDED -DNDEBUG\" \"awk\" generated <$SRCROOT/ncurses/include/curses.h >$SRCROOT/base/lib_gen.c\n";
+			shellScript = "set -e\nsh -e $SRCROOT/ncurses/ncurses/base/MKlib_gen.sh \"$THIS_CC -E -DHAVE_CONFIG_H -I../ncurses -I$SRCROOT/ncurses/ncurses -I$SRCROOT/ncurses/ncurses/include -I. -I../include  -U_XOPEN_SOURCE -D_XOPEN_SOURCE=500 -DSIGWINCH=28 -D_XOPEN_SOURCE_EXTENDED -DNDEBUG\" \"awk\" generated <$SRCROOT/ncurses/include/curses.h >$SRCROOT/ncurses/lib_gen.c\n";
 			showEnvVarsInLog = 0;
 		};
 		4CD05005103F1BFD001C87D5 /* make lib_gen.c */ = {
@@ -3909,7 +3870,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nsh -e $SRCROOT/ncurses/ncurses/base/MKlib_gen.sh \"$THIS_CC -E -DHAVE_CONFIG_H -I../ncurses -I$SRCROOT/ncurses/ncurses -I$SRCROOT/ncurses/ncurses/include -I. -I../include  -U_XOPEN_SOURCE -D_XOPEN_SOURCE=500 -DSIGWINCH=28 -D_XOPEN_SOURCE_EXTENDED -DNDEBUG\" \"awk\" generated <$SRCROOT/ncurses/include/curses.h >$SRCROOT/base/lib_gen.c\n";
+			shellScript = "set -e\nsh -e $SRCROOT/ncurses/ncurses/base/MKlib_gen.sh \"$THIS_CC -E -DHAVE_CONFIG_H -I../ncurses -I$SRCROOT/ncurses/ncurses -I$SRCROOT/ncurses/ncurses/include -I. -I../include  -U_XOPEN_SOURCE -D_XOPEN_SOURCE=500 -DSIGWINCH=28 -D_XOPEN_SOURCE_EXTENDED -DNDEBUG\" \"awk\" generated <$SRCROOT/ncurses/include/curses.h >$SRCROOT/ncurses/lib_gen.c\n";
 			showEnvVarsInLog = 0;
 		};
 		4CD05109103F1C12001C87D5 /* make lib_gen.c */ = {
@@ -3924,7 +3885,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nsh -e $SRCROOT/ncurses/ncurses/base/MKlib_gen.sh \"$THIS_CC -E -DHAVE_CONFIG_H -I../ncurses -I$SRCROOT/ncurses/ncurses -I$SRCROOT/ncurses/ncurses/include -I. -I../include  -U_XOPEN_SOURCE -D_XOPEN_SOURCE=500 -DSIGWINCH=28 -D_XOPEN_SOURCE_EXTENDED -DNDEBUG\" \"awk\" generated <$SRCROOT/ncurses/include/curses.h >$SRCROOT/base/lib_gen.c\n";
+			shellScript = "set -e\nsh -e $SRCROOT/ncurses/ncurses/base/MKlib_gen.sh \"$THIS_CC -E -DHAVE_CONFIG_H -I../ncurses -I$SRCROOT/ncurses/ncurses -I$SRCROOT/ncurses/ncurses/include -I. -I../include  -U_XOPEN_SOURCE -D_XOPEN_SOURCE=500 -DSIGWINCH=28 -D_XOPEN_SOURCE_EXTENDED -DNDEBUG\" \"awk\" generated <$SRCROOT/ncurses/include/curses.h >$SRCROOT/ncurses/lib_gen.c\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -4695,6 +4656,7 @@
 					include,
 				);
 				INSTALL_PATH = /usr/bin;
+				"INSTALL_PATH[sdk=iphonesimulator*]" = "$(SDKROOT)/usr/bin";
 				PRODUCT_NAME = clear;
 				STRIP_INSTALLED_PRODUCT = YES;
 			};
@@ -4710,6 +4672,7 @@
 					include,
 				);
 				INSTALL_PATH = /usr/bin;
+				"INSTALL_PATH[sdk=iphonesimulator*]" = "$(SDKROOT)/usr/bin";
 				PRODUCT_NAME = infocmp;
 				STRIP_INSTALLED_PRODUCT = YES;
 			};
@@ -4726,6 +4689,7 @@
 					include,
 				);
 				INSTALL_PATH = /usr/bin;
+				"INSTALL_PATH[sdk=iphonesimulator*]" = "$(SDKROOT)/usr/bin";
 				PRODUCT_NAME = tput;
 				STRIP_INSTALLED_PRODUCT = YES;
 			};
@@ -4741,6 +4705,7 @@
 					include,
 				);
 				INSTALL_PATH = /usr/bin;
+				"INSTALL_PATH[sdk=iphonesimulator*]" = "$(SDKROOT)/usr/bin";
 				PRODUCT_NAME = tset;
 				STRIP_INSTALLED_PRODUCT = YES;
 			};
@@ -4756,6 +4721,7 @@
 					include,
 				);
 				INSTALL_PATH = /usr/bin;
+				"INSTALL_PATH[sdk=iphonesimulator*]" = "$(SDKROOT)/usr/bin";
 				PRODUCT_NAME = toe;
 				STRIP_INSTALLED_PRODUCT = YES;
 			};
@@ -4771,6 +4737,7 @@
 					include,
 				);
 				INSTALL_PATH = /usr/bin;
+				"INSTALL_PATH[sdk=iphonesimulator*]" = "$(SDKROOT)/usr/bin";
 				PRODUCT_NAME = tic;
 				STRIP_INSTALLED_PRODUCT = YES;
 			};
@@ -4793,6 +4760,7 @@
 					include,
 				);
 				INSTALL_PATH = /usr/local/bin;
+				"INSTALL_PATH[sdk=iphonesimulator*]" = "$(SDKROOT)/usr/local/bin";
 				PRODUCT_NAME = make_hash;
 				SDKROOT = "";
 				SKIP_INSTALL = YES;
@@ -4822,6 +4790,7 @@
 					ncurses/include,
 				);
 				INSTALL_PATH = /usr/lib;
+				"INSTALL_PATH[sdk=iphonesimulator*]" = "$(SDKROOT)/usr/lib";
 				LD_DYLIB_INSTALL_NAME = "$(DYLIB_INSTALL_NAME_BASE:standardizepath)/$(EXECUTABLE_PATH)";
 				PRODUCT_NAME = ncurses.5.4;
 				STRIP_INSTALLED_PRODUCT = YES;
@@ -4888,6 +4857,7 @@
 					ncurses/include,
 				);
 				INSTALL_PATH = /usr/local/lib;
+				"INSTALL_PATH[sdk=iphonesimulator*]" = "$(SDKROOT)/usr/local/lib";
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
@@ -4925,6 +4895,7 @@
 					ncurses/include,
 				);
 				INSTALL_PATH = /usr/lib;
+				"INSTALL_PATH[sdk=iphonesimulator*]" = "$(SDKROOT)/usr/lib";
 				LD_DYLIB_INSTALL_NAME = "$(DYLIB_INSTALL_NAME_BASE:standardizepath)/$(EXECUTABLE_PATH)";
 				PRODUCT_NAME = form.5.4;
 				STRIP_INSTALLED_PRODUCT = YES;
@@ -4955,6 +4926,7 @@
 					ncurses/include,
 				);
 				INSTALL_PATH = /usr/lib;
+				"INSTALL_PATH[sdk=iphonesimulator*]" = "$(SDKROOT)/usr/lib";
 				LD_DYLIB_INSTALL_NAME = "$(DYLIB_INSTALL_NAME_BASE:standardizepath)/$(EXECUTABLE_PATH)";
 				PRODUCT_NAME = menu.5.4;
 				STRIP_INSTALLED_PRODUCT = YES;
@@ -4985,6 +4957,7 @@
 					ncurses/include,
 				);
 				INSTALL_PATH = /usr/lib;
+				"INSTALL_PATH[sdk=iphonesimulator*]" = "$(SDKROOT)/usr/lib";
 				LD_DYLIB_INSTALL_NAME = "$(DYLIB_INSTALL_NAME_BASE:standardizepath)/$(EXECUTABLE_PATH)";
 				PRODUCT_NAME = panel.5.4;
 				STRIP_INSTALLED_PRODUCT = YES;
@@ -5003,6 +4976,7 @@
 					include,
 				);
 				INSTALL_PATH = /usr/bin;
+				"INSTALL_PATH[sdk=iphonesimulator*]" = "$(SDKROOT)/usr/bin";
 				OTHER_LDFLAGS = "-lnative_ncurses";
 				PRODUCT_NAME = native_tic;
 			};

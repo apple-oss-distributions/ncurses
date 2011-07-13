@@ -46,6 +46,7 @@ echo '** Building terminfo database, please wait...'
 : ${prefix=/usr}
 : ${exec_prefix=${prefix}}
 : ${bindir=${exec_prefix}/bin}
+: ${TIC=tic}
 : ${top_srcdir=..}
 : ${srcdir=.}
 : ${datadir=${prefix}/share}
@@ -82,14 +83,12 @@ SHLIB_PATH=$PATH
 export SHLIB_PATH
 
 # set a variable to simplify environment update in shlib
-SHLIB_HOST=darwin10.0.0
+SHLIB_HOST=darwin10.0
 export SHLIB_HOST
 
 # don't use user's TERMINFO variable
 TERMINFO=${DESTDIR}$ticdir ; export TERMINFO
 umask 022
-
-TIC=$BUILD_DIR/native_tic
 
 # Construct the name of the old (obsolete) pathname, e.g., /usr/lib/terminfo.
 TICDIR=`echo $TERMINFO | sed -e 's%/share/\([^/]*\)$%/lib/\1%'`
@@ -100,14 +99,9 @@ TICDIR=`echo $TERMINFO | sed -e 's%/share/\([^/]*\)$%/lib/\1%'`
 # the directory is actually a symbolic link.
 ( test -d "$TERMINFO" && cd $TERMINFO && rm -fr ? 2>/dev/null )
 
-echo "**************************************************"
-echo "tic is at... $TIC"
-echo "SHLIB is $SHLIB"
-echo "ext_funcs is $ext_funcs"
-echo "**************************************************"
-
+if test "$ext_funcs" = 1 ; then
 cat <<EOF
-Running $TIC -x -s  to install $TERMINFO ...
+Running tic to install $TERMINFO ...
 
 	You may see messages regarding extended capabilities, e.g., AX.
 	These are extended terminal capabilities which are compiled
@@ -117,11 +111,30 @@ Running $TIC -x -s  to install $TERMINFO ...
 	document, and install the terminfo without the -x option.
 
 EOF
-
-if ( $SHLIB $TIC$suffix -x -s -o $TERMINFO $source )
+if ( $SHLIB tic$suffix -x -s -o $TERMINFO $source )
 then
 	echo '** built new '$TERMINFO
 else
 	echo '? tic could not build '$TERMINFO
 	exit 1
+fi
+else
+cat <<EOF
+Running tic to install $TERMINFO ...
+
+	You may see messages regarding unknown capabilities, e.g., AX.
+	These are extended terminal capabilities which may be compiled
+	using
+		tic -x
+	If you have ncurses 4.2 applications, you should read the INSTALL
+	document, and install the terminfo without the -x option.
+
+EOF
+if ( $SHLIB tic$suffix -s -o $TERMINFO $source )
+then
+	echo '** built new '$TERMINFO
+else
+	echo '? tic could not build '$TERMINFO
+	exit 1
+fi
 fi
