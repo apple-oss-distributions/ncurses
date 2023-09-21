@@ -1,5 +1,5 @@
 /****************************************************************************
- * Copyright (c) 1998,2000 Free Software Foundation, Inc.                   *
+ * Copyright (c) 2010,2012 Free Software Foundation, Inc.                   *
  *                                                                          *
  * Permission is hereby granted, free of charge, to any person obtaining a  *
  * copy of this software and associated documentation files (the            *
@@ -26,36 +26,83 @@
  * authorization.                                                           *
  ****************************************************************************/
 
+/****************************************************************************
+ *  Author: Thomas E. Dickey                        2010                    *
+ ****************************************************************************/
+
 /*
- * $Id: tty_input.h,v 1.2 2000/12/10 02:26:51 tom Exp $
+ * $Id: build.priv.h,v 1.9 2012/02/22 22:17:02 tom Exp $
+ *
+ *	build.priv.h
+ *
+ *	This is a reduced version of curses.priv.h, for build-time utilties.
+ *	Because it has fewer dependencies, this simplifies cross-compiling.
+ *
  */
 
-#ifndef TTY_INPUT_H
-#define TTY_INPUT_H 1
+#ifndef CURSES_PRIV_H
+#define CURSES_PRIV_H 1
 
-extern NCURSES_EXPORT(bool) _nc_tty_mouse_mask (mmask_t);
-extern NCURSES_EXPORT(bool) _nc_tty_pending (void);
-extern NCURSES_EXPORT(int)  _nc_tty_next_event (int);
-extern NCURSES_EXPORT(void) _nc_tty_flags_changed (void);
-extern NCURSES_EXPORT(void) _nc_tty_flush (void);
-extern NCURSES_EXPORT(void) _nc_tty_input_resume (void);
-extern NCURSES_EXPORT(void) _nc_tty_input_suspend (void);
+#include <ncurses_dll.h>
 
-struct tty_input_data {
-	int             _ifd;           /* input file ptr for screen        */
-	int             _keypad_xmit;   /* current terminal state           */
-	int             _meta_on;       /* current terminal state           */
+#ifdef __cplusplus
+extern "C" {
+#endif
 
-	/*
-	 * These are the data that support the mouse interface.
-	 */
-	bool            (*_mouse_event) (SCREEN *);
-	bool            (*_mouse_inline)(SCREEN *);
-	bool            (*_mouse_parse) (int);
-	void            (*_mouse_resume)(SCREEN *);
-	void            (*_mouse_wrap)  (SCREEN *);
-	int             _mouse_fd;      /* file-descriptor, if any */
-	int             mousetype;
-};
+#include <ncurses_cfg.h>
 
-#endif /* TTY_INPUT_H */
+#if USE_RCS_IDS
+#define MODULE_ID(id) static const char Ident[] = id;
+#else
+#define MODULE_ID(id) /*nothing*/
+#endif
+
+#include <stdlib.h>
+#include <string.h>
+#include <sys/types.h>
+
+#include <assert.h>
+#include <stdio.h>
+
+#include <errno.h>
+
+#include <curses.h>	/* we'll use -Ipath directive to get the right one! */
+
+/* usually in <unistd.h> */
+#ifndef EXIT_SUCCESS
+#define EXIT_SUCCESS 0
+#endif
+
+#ifndef EXIT_FAILURE
+#define EXIT_FAILURE 1
+#endif
+
+#define FreeAndNull(p)   free(p); p = 0
+#define UChar(c)         ((unsigned char)(c))
+#define SIZEOF(v)        (sizeof(v) / sizeof(v[0]))
+
+#include <nc_alloc.h>
+#include <nc_string.h>
+
+/* declare these, to avoid needing term.h */
+#if BROKEN_LINKER || USE_REENTRANT
+#define NCURSES_ARRAY(name) \
+	NCURSES_WRAPPED_VAR(NCURSES_CONST char * const *, name)
+
+NCURSES_ARRAY(boolnames);
+NCURSES_ARRAY(boolfnames);
+NCURSES_ARRAY(numnames);
+NCURSES_ARRAY(numfnames);
+NCURSES_ARRAY(strnames);
+NCURSES_ARRAY(strfnames);
+#endif
+
+#if NO_LEAKS
+NCURSES_EXPORT(void) _nc_names_leaks(void);
+#endif
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* CURSES_PRIV_H */

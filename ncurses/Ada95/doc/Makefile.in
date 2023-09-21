@@ -1,7 +1,6 @@
-#!/bin/sh
-# $Id: tar-copy.sh,v 1.5 2003/10/25 14:40:07 tom Exp $
+# $Id: Makefile.in,v 1.4 2015/08/05 23:15:41 tom Exp $
 ##############################################################################
-# Copyright (c) 1998,2003 Free Software Foundation, Inc.                     #
+# Copyright (c) 2011-2012,2015 Free Software Foundation, Inc.                #
 #                                                                            #
 # Permission is hereby granted, free of charge, to any person obtaining a    #
 # copy of this software and associated documentation files (the "Software"), #
@@ -30,48 +29,54 @@
 #
 # Author: Thomas E. Dickey
 #
-# Copy a collection of files using 'tar', so that their dates and links are
-# preserved
-#
-# Parameters:
-#	$1 = files to copy
-#	$2 = source directory
-#	$3 = destination directory
-#
-#DOIT=echo
-DOIT=eval
+# Makefile for AdaCurses manual pages.
 
-if test $# != 3 ; then
-	echo "Usage: $0 files source target"
-	exit 1
-elif test ! -d "$2" ; then
-	echo "Source directory not found: $2"
-	exit 1
-elif test ! -d "$3" ; then
-	echo "Target directory not found: $3"
-	exit 1
-fi
+SHELL		= @SHELL@
+VPATH		= @srcdir@
 
-WD=`pwd`
+DESTDIR		= @DESTDIR@
+srcdir		= @srcdir@
+prefix		= @prefix@
+exec_prefix	= @exec_prefix@
+datarootdir	= @datarootdir@
+datadir		= @datadir@
+mandir		= @mandir@
 
-TMP=$WD/copy$$
+INSTALL		= @INSTALL@
+INSTALL_DATA	= @INSTALL_DATA@
 
-cd $2
-TEST=`ls -d $1 2>/dev/null`
-if test -z "$TEST"
-then
-	echo "... no match for \"$1\" in $2"
-else
-	echo "... installing files matching \"$1\" in $2"
-	trap "rm -f $TMP" 0 1 2 5 15
-	if ( tar cf $TMP $1 )
-	then
-		cd $3
-		LIST=`tar tf $TMP 2>&1`
-		$DOIT rm -rf $LIST 2>/dev/null
-		$DOIT tar xvf $TMP
-	else
-		echo "Cannot create tar of $1 files"
-		exit 1
-	fi
-fi
+DFT_ARG_SUFFIX	= @DFT_ARG_SUFFIX@
+
+THIS		= AdaCurses
+DOCDIR		= $(DESTDIR)$(datadir)/doc/$(THIS)
+MANDIR		= $(DESTDIR)$(mandir)/man1
+
+all \
+sources \
+depend \
+tags :
+
+$(DOCDIR) \
+$(MANDIR) :
+	mkdir -p $@
+
+install install.man : $(MANDIR)
+	$(INSTALL_DATA) adacurses${DFT_ARG_SUFFIX}-config.1 $(MANDIR)
+
+uninstall uninstall.man :
+	-rm -f $(MANDIR)/adacurses${DFT_ARG_SUFFIX}-config.1
+
+# HTML documentation is optional, usually in a separate package.
+install.html : $(DOCDIR)
+	cd $(srcdir) && tar -cf - *.htm* ada | tar -C $(DOCDIR) -xf -
+
+uninstall.html :
+	-rm -rf $(DOCDIR)
+
+mostlyclean :
+	-rm -f core tags TAGS *~ *.bak *.ln *.atac trace
+
+clean:	mostlyclean
+
+distclean realclean: clean
+	-rm -f Makefile *-config.1
