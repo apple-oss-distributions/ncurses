@@ -53,6 +53,8 @@
 			buildConfigurationList = FC00FC7714E9FB13000AD1B3 /* Build configuration list for PBXAggregateTarget "executables" */;
 			buildPhases = (
 				FC00FC8914E9FB80000AD1B3 /* fix_bin.sh */,
+				2A5594AF2AC540DD001A7A55 /* Install test script */,
+				2A5594B52AC541F3001A7A55 /* Install test files */,
 			);
 			dependencies = (
 				FC00FC7E14E9FB36000AD1B3 /* PBXTargetDependency */,
@@ -104,6 +106,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		2A0CAB7429D4F36A00F7451C /* nc_abi.c in Sources */ = {isa = PBXBuildFile; fileRef = 2A0CAB7329D4F36A00F7451C /* nc_abi.c */; };
 		2A114C63295A2699005099EA /* obsolete.c in Sources */ = {isa = PBXBuildFile; fileRef = 2A114C62295A2698005099EA /* obsolete.c */; };
 		2A114C66295A2A74005099EA /* tparm_type.c in Sources */ = {isa = PBXBuildFile; fileRef = 2A114C65295A2A74005099EA /* tparm_type.c */; };
 		2A114C67295A2A74005099EA /* tparm_type.c in Sources */ = {isa = PBXBuildFile; fileRef = 2A114C65295A2A74005099EA /* tparm_type.c */; };
@@ -115,6 +118,7 @@
 		2A1512D92939B9E90051ED9C /* transform.c in Sources */ = {isa = PBXBuildFile; fileRef = 2A1512D72939B9E90051ED9C /* transform.c */; };
 		2A1512DA2939B9E90051ED9C /* transform.c in Sources */ = {isa = PBXBuildFile; fileRef = 2A1512D72939B9E90051ED9C /* transform.c */; };
 		2A1512DB293AB16C0051ED9C /* transform.c in Sources */ = {isa = PBXBuildFile; fileRef = 2A1512D72939B9E90051ED9C /* transform.c */; };
+		2A5594B32AC541B6001A7A55 /* config_test.sh in Install test script */ = {isa = PBXBuildFile; fileRef = 2A5594B12AC5416F001A7A55 /* config_test.sh */; };
 		3FB35B98206F82620097BE22 /* libncurses.5.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C29FC2F10225768001D8279 /* libncurses.5.4.dylib */; };
 		3FB35B9A206F82710097BE22 /* libncurses.5.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C29FC2F10225768001D8279 /* libncurses.5.4.dylib */; };
 		3FB35B9C206F82950097BE22 /* libncurses.5.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C29FC2F10225768001D8279 /* libncurses.5.4.dylib */; };
@@ -609,7 +613,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2A5594AF2AC540DD001A7A55 /* Install test script */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /AppleInternal/Tests/ncurses;
+			dstSubfolderSpec = 0;
+			files = (
+				2A5594B32AC541B6001A7A55 /* config_test.sh in Install test script */,
+			);
+			name = "Install test script";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2A0CAB7329D4F36A00F7451C /* nc_abi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = nc_abi.c; sourceTree = "<group>"; };
 		2A114C62295A2698005099EA /* obsolete.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = obsolete.c; sourceTree = "<group>"; };
 		2A114C64295A2A3F005099EA /* tparm_type.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tparm_type.h; sourceTree = "<group>"; };
 		2A114C65295A2A74005099EA /* tparm_type.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tparm_type.c; sourceTree = "<group>"; };
@@ -627,6 +646,8 @@
 		2A1512D4293875F30051ED9C /* lib_driver.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lib_driver.c; sourceTree = "<group>"; };
 		2A1512D5293876870051ED9C /* make_hash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = make_hash.c; sourceTree = "<group>"; };
 		2A1512D72939B9E90051ED9C /* transform.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = transform.c; sourceTree = "<group>"; };
+		2A5594B12AC5416F001A7A55 /* config_test.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = config_test.sh; path = tests/config_test.sh; sourceTree = SOURCE_ROOT; };
+		2A5594B22AC5417D001A7A55 /* ncurses.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = ncurses.plist; path = tests/ncurses.plist; sourceTree = SOURCE_ROOT; };
 		4C29FA671020E62B001D8279 /* clear */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = clear; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C29FA791020E959001D8279 /* infocmp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = infocmp; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C29FA871020EB4A001D8279 /* tput */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tput; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1809,6 +1830,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		2A5594B02AC540F0001A7A55 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				2A5594B12AC5416F001A7A55 /* config_test.sh */,
+				2A5594B22AC5417D001A7A55 /* ncurses.plist */,
+			);
+			name = tests;
+			sourceTree = "<group>";
+		};
 		3FB35B97206F82620097BE22 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1864,6 +1894,7 @@
 				4CF089C10FFC2BB200CE4372 /* README.emx */,
 				4CF089C20FFC2BB200CE4372 /* tar-copy.sh */,
 				4CF089C30FFC2BB200CE4372 /* test */,
+				2A5594B02AC540F0001A7A55 /* tests */,
 				4CF08A0F0FFC2BB300CE4372 /* TO-DO */,
 			);
 			path = ncurses;
@@ -2812,6 +2843,7 @@
 				4CF0891E0FFC2BB100CE4372 /* MKkeyname.awk */,
 				4CF0891F0FFC2BB100CE4372 /* MKlib_gen.sh */,
 				4CF089200FFC2BB100CE4372 /* MKunctrl.awk */,
+				2A0CAB7329D4F36A00F7451C /* nc_abi.c */,
 				4CF089210FFC2BB100CE4372 /* nc_panel.c */,
 				4CF089220FFC2BB100CE4372 /* README */,
 				4CF089230FFC2BB100CE4372 /* resizeterm.c */,
@@ -3409,6 +3441,27 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2A5594B52AC541F3001A7A55 /* Install test files */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/tests/ncurses.plist",
+			);
+			name = "Install test files";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DSTROOT)/AppleInternal/CoreOS/BATS/unit_tests",
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = ". \"$PROJECT_DIR\"/xcodescripts/install_test_files.sh\n";
+			showEnvVarsInLog = 0;
+		};
 		4C5C3FD6102CD13500B4B066 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 12;
@@ -3655,6 +3708,7 @@
 				4C29FC7A102257C6001D8279 /* lib_addch.c in Sources */,
 				4C29FC7B102257C6001D8279 /* lib_addstr.c in Sources */,
 				4C29FC7C102257C6001D8279 /* lib_baudrate.c in Sources */,
+				2A0CAB7429D4F36A00F7451C /* nc_abi.c in Sources */,
 				4C29FC7D102257C6001D8279 /* lib_beep.c in Sources */,
 				4C29FC7E102257C6001D8279 /* lib_bkgd.c in Sources */,
 				4C29FC7F102257C6001D8279 /* lib_box.c in Sources */,
@@ -4111,6 +4165,10 @@
 					"$(PROJECT_DIR)/ncurses/ncurses",
 					"$(PROJECT_DIR)/ncurses/progs",
 				);
+				OTHER_CFLAGS = (
+					"-fno-typed-memory-operations-experimental",
+					"-fno-typed-cxx-new-delete",
+				);
 				VERSIONING_SYSTEM = "apple-generic";
 				WARNING_CFLAGS = "-Werror=format-nonliteral";
 			};
@@ -4194,8 +4252,8 @@
 			buildSettings = {
 				DYLIB_COMPATIBILITY_VERSION = 5.4;
 				DYLIB_CURRENT_VERSION = 5.4;
-				OTHER_TAPI_FLAGS = "-Xparser -include -Xparser $(SRCROOT)/ncurses/include/ncurses_cfg.h -extra-private-header $(BUILT_PRODUCTS_DIR)/curses.h -extra-private-header $(BUILT_PRODUCTS_DIR)/term.h -extra-project-header $(SRCROOT)/ncurses/include/nc_alloc.h -extra-private-header $(SRCROOT)/ncurses/include/termcap.h -extra-private-header $(SRCROOT)/ncurses/include/term_entry.h -extra-project-header $(SRCROOT)/ncurses/include/nc_panel.h -extra-private-header $(SRCROOT)/ncurses/include/tic.h -extra-private-header $(SRCROOT)/ncurses/include/unctrl.h -extra-project-header $(SRCROOT)/ncurses/ncurses/curses.priv.h";
-				"OTHER_TAPI_FLAGS[sdk=macosx*]" = "-Xparser -include -Xparser $(SRCROOT)/ncurses/include/ncurses_cfg.h -extra-public-header $(BUILT_PRODUCTS_DIR)/curses.h -extra-public-header $(BUILT_PRODUCTS_DIR)/term.h -extra-project-header $(SRCROOT)/ncurses/include/nc_alloc.h -extra-public-header $(SRCROOT)/ncurses/include/termcap.h -extra-public-header $(SRCROOT)/ncurses/include/term_entry.h -extra-project-header $(SRCROOT)/ncurses/include/nc_panel.h -extra-public-header $(SRCROOT)/ncurses/include/tic.h -extra-public-header $(SRCROOT)/ncurses/include/unctrl.h -extra-project-header $(SRCROOT)/ncurses/ncurses/curses.priv.h";
+				OTHER_TAPI_FLAGS = "$(COMMON_TAPI_FLAGS) -Xparser -include -Xparser $(SRCROOT)/ncurses/include/ncurses_cfg.h -extra-private-header $(BUILT_PRODUCTS_DIR)/curses.h -extra-private-header $(BUILT_PRODUCTS_DIR)/term.h -extra-project-header $(SRCROOT)/ncurses/include/nc_alloc.h -extra-private-header $(SRCROOT)/ncurses/include/termcap.h -extra-private-header $(SRCROOT)/ncurses/include/term_entry.h -extra-project-header $(SRCROOT)/ncurses/include/nc_panel.h -extra-private-header $(SRCROOT)/ncurses/include/tic.h -extra-private-header $(SRCROOT)/ncurses/include/unctrl.h -extra-project-header $(SRCROOT)/ncurses/ncurses/curses.priv.h";
+				"OTHER_TAPI_FLAGS[sdk=macosx*]" = "$(COMMON_TAPI_FLAGS) -Xparser -include -Xparser $(SRCROOT)/ncurses/include/ncurses_cfg.h -extra-public-header $(BUILT_PRODUCTS_DIR)/curses.h -extra-public-header $(BUILT_PRODUCTS_DIR)/term.h -extra-project-header $(SRCROOT)/ncurses/include/nc_alloc.h -extra-public-header $(SRCROOT)/ncurses/include/termcap.h -extra-public-header $(SRCROOT)/ncurses/include/term_entry.h -extra-project-header $(SRCROOT)/ncurses/include/nc_panel.h -extra-public-header $(SRCROOT)/ncurses/include/tic.h -extra-public-header $(SRCROOT)/ncurses/include/unctrl.h -extra-project-header $(SRCROOT)/ncurses/ncurses/curses.priv.h";
 				PRODUCT_NAME = ncurses.5.4;
 			};
 			name = Release;
@@ -4231,8 +4289,8 @@
 			buildSettings = {
 				DYLIB_COMPATIBILITY_VERSION = 5.4;
 				DYLIB_CURRENT_VERSION = 5.4;
-				OTHER_TAPI_FLAGS = "-I$(SRCROOT)/ncurses/menu -extra-private-header $(SRCROOT)/ncurses/form/form.h -extra-project-header $(SRCROOT)/ncurses/form/form.priv.h";
-				"OTHER_TAPI_FLAGS[sdk=macosx*]" = "-I$(SRCROOT)/ncurses/menu -extra-public-header $(SRCROOT)/ncurses/form/form.h -extra-project-header $(SRCROOT)/ncurses/form/form.priv.h";
+				OTHER_TAPI_FLAGS = "$(COMMON_TAPI_FLAGS) -I$(SRCROOT)/ncurses/menu -extra-private-header $(SRCROOT)/ncurses/form/form.h -extra-project-header $(SRCROOT)/ncurses/form/form.priv.h";
+				"OTHER_TAPI_FLAGS[sdk=macosx*]" = "$(COMMON_TAPI_FLAGS) -I$(SRCROOT)/ncurses/menu -extra-public-header $(SRCROOT)/ncurses/form/form.h -extra-project-header $(SRCROOT)/ncurses/form/form.priv.h";
 				PRODUCT_NAME = form.5.4;
 			};
 			name = Release;
@@ -4243,8 +4301,8 @@
 			buildSettings = {
 				DYLIB_COMPATIBILITY_VERSION = 5.4;
 				DYLIB_CURRENT_VERSION = 5.4;
-				OTHER_TAPI_FLAGS = "-extra-private-header $(SRCROOT)/ncurses/menu/menu.h -extra-project-header $(SRCROOT)/ncurses/menu/menu.priv.h";
-				"OTHER_TAPI_FLAGS[sdk=macosx*]" = "-extra-public-header $(SRCROOT)/ncurses/menu/menu.h -extra-project-header $(SRCROOT)/ncurses/menu/menu.priv.h";
+				OTHER_TAPI_FLAGS = "$(COMMON_TAPI_FLAGS) -extra-private-header $(SRCROOT)/ncurses/menu/menu.h -extra-project-header $(SRCROOT)/ncurses/menu/menu.priv.h";
+				"OTHER_TAPI_FLAGS[sdk=macosx*]" = "$(COMMON_TAPI_FLAGS) -extra-public-header $(SRCROOT)/ncurses/menu/menu.h -extra-project-header $(SRCROOT)/ncurses/menu/menu.priv.h";
 				PRODUCT_NAME = menu.5.4;
 			};
 			name = Release;
@@ -4255,8 +4313,8 @@
 			buildSettings = {
 				DYLIB_COMPATIBILITY_VERSION = 5.4;
 				DYLIB_CURRENT_VERSION = 5.4;
-				OTHER_TAPI_FLAGS = "-extra-private-header $(SRCROOT)/ncurses/panel/panel.h";
-				"OTHER_TAPI_FLAGS[sdk=macosx*]" = "-extra-public-header $(SRCROOT)/ncurses/panel/panel.h";
+				OTHER_TAPI_FLAGS = "$(COMMON_TAPI_FLAGS) -extra-private-header $(SRCROOT)/ncurses/panel/panel.h";
+				"OTHER_TAPI_FLAGS[sdk=macosx*]" = "$(COMMON_TAPI_FLAGS) -extra-public-header $(SRCROOT)/ncurses/panel/panel.h";
 				PRODUCT_NAME = panel.5.4;
 			};
 			name = Release;
